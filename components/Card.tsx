@@ -1,5 +1,5 @@
 import styles from '@/styles/index.module.css'
-
+import { render, screen } from '@testing-library/react'
 export interface CardProps {
   header: string
   description: string
@@ -13,4 +13,6 @@ export const Card: React.FC<CardProps> = ({ header, description, link }) => {
       <p>{description}</p>
     </a>
   )
+
+  expect(screen.getByRole('heading')).toHaveTextContent('Documentation')
 }
