@@ -14,5 +14,5 @@ export const Card: React.FC<CardProps> = ({ header, description, link }) => {
     </a>
   )
 
-  expect(screen.getByRole('heading')).toHaveTextContent('Documentation')
+    expect(screen.getByRole('heading')).toHaveTextContent('Documentation')
 }

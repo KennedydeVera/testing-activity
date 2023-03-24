@@ -19,7 +19,4 @@ export const CardContainer: React.FC<CardContainerProps> = ({ cards }) => {
       ))}
     </div>
   )
-  expect(screen.getByText('description')).toBeInTheDocument()
-  expect(screen.queryByText('description')).toBeNull()
-  
 }
